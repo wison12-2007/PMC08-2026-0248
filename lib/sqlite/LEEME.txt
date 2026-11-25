@@ -1,0 +1,1 @@
+Coloca aqui sqlite3.c y sqlite3.h (amalgamation de sqlite.org).

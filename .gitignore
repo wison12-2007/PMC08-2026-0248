@@ -1,0 +1,9 @@
+build/
+estacion
+estacion.exe
+*.o
+*.db
+*.db-shm
+*.db-wal
+.env
+*.env

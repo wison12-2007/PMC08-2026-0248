@@ -1,0 +1,17 @@
+[Unit]
+Description=Estacion de telemetria ITLA (enviar)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/estacion
+EnvironmentFile=/etc/estacion.env
+ExecStart=/opt/estacion/estacion enviar
+Restart=always
+RestartSec=5
+KillSignal=SIGINT
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
